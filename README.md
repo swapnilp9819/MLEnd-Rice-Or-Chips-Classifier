@@ -6,6 +6,7 @@ This project utilizes the MLEnd Yummy Dataset to build a machine learning pipeli
 ### Dataset Description
 The dataset comprises 3,250 images from the MLEnd Yummy Dataset. The images are initially uncategorized; categorization into two classes—rice and chips—is performed using keywords ('rice', 'biryani', 'chips', 'fries') identified in the dish names and ingredients. The dataset can be accessed and downloaded directly into a Python environment using the provided code snippet:
 ```python
+!pip install mlend
 from mlend import download_yummy
 drive.mount('/content/drive')
 baseDir = download_yummy(save_to='/path/to/save')
